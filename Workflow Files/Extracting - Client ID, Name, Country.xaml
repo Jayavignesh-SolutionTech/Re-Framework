@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>941.6,1269.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>941.6,1521.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Extracting___Client_ID__Name__Country_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="52">
@@ -72,19 +72,19 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Extracting___Client_ID__Name__Country" sap:VirtualizedContainerService.HintSize="547.2,1204.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Extracting___Client_ID__Name__Country" sap:VirtualizedContainerService.HintSize="777.6,1456.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="505.6,1112" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="a7e164e2601da2bd0fa4968729a5704f" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="736,1364" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="a7e164e2601da2bd0fa4968729a5704f" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="472,964.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="702.4,1216.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Client_Info" />
             </Sequence.Variables>
@@ -93,11 +93,11 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="430.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;BOT Started Processing on - &quot;+in_TransactionItem.SpecificContent(&quot;WIID&quot;).ToString+&quot; Transaction Item&quot;]" />
-            <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="430.4,60" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="[&quot;https://acme-test.uipath.com/work-items/&quot;+in_TransactionItem.SpecificContent(&quot;WIID&quot;).ToString]" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="430.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Delay for Page load&quot;]" />
-            <Delay Duration="[TimeSpan.FromSeconds(5)]" sap:VirtualizedContainerService.HintSize="430.4,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'P'" sap:VirtualizedContainerService.HintSize="430.4,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="660.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;BOT Started Processing on - &quot;+in_TransactionItem.SpecificContent(&quot;WIID&quot;).ToString+&quot; Transaction Item&quot;]" />
+            <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="660.8,60" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="[&quot;https://acme-test.uipath.com/work-items/&quot;+in_TransactionItem.SpecificContent(&quot;WIID&quot;).ToString]" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="660.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Delay for Page load&quot;]" />
+            <Delay Duration="[TimeSpan.FromSeconds(5)]" sap:VirtualizedContainerService.HintSize="660.8,22.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'P'" sap:VirtualizedContainerService.HintSize="660.8,107.2" sap2010:WorkflowViewState.IdRef="GetValue_1">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="561e6600-12e8-439c-8575-6390c3d30d75" InformativeScreenshot="0bbe892e92d006f1f626460e796a8a7e" Selector="&lt;webctrl tag='P' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -109,7 +109,7 @@
                 <OutArgument x:TypeArguments="x:String">[Client_Info]</OutArgument>
               </ui:GetValue.Value>
             </ui:GetValue>
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="430.4,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="660.8,164" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -145,7 +145,28 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="430.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Client Name. ID and Country is Extracted now&quot;+out_Client_ID+&quot;-&quot;+out_Client_Name+&quot;-&quot;+out_Client_Country]" />
+            <If Condition="[String.IsNullOrEmpty(out_Client_Name) And String.IsNullOrWhiteSpace(out_Client_Name)]" sap:VirtualizedContainerService.HintSize="660.8,344.8" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="241.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Throw Exception="[new BusinessRuleException(&quot;Client Name Shouldn't be Empty&quot;)]" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="375.2,185.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Client Name. ID and Country is Extracted now&quot;+out_Client_ID+&quot;-&quot;+out_Client_Name+&quot;-&quot;+out_Client_Country]" />
+                </Sequence>
+              </If.Else>
+            </If>
           </Sequence>
         </ActivityAction>
       </ui:BrowserScope.Body>
